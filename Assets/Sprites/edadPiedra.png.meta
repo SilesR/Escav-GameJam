@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 605520c403937dc4fbed0f73d82e56b5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: edadPiedra_0
+    21300002: edadPiedra_1
+    21300004: edadPiedra_2
+    21300006: edadPiedra_3
+    21300008: edadPiedra_7
+    21300010: edadPiedra_10
+    21300012: edadPiedra_11
+    21300014: edadPiedra_13
+    21300016: edadPiedra_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: edadPiedra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 1774
+        height: 1657
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_1
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 1494
+        width: 1818
+        height: 554
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_2
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 477
+        width: 726
+        height: 976
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 564
+        height: 237
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_7
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 88
+        width: 680
+        height: 856
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_10
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 53
+        width: 699
+        height: 427
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_11
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 189
+        width: 93
+        height: 179
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 37
+        width: 222
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: edadPiedra_14
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 948
+        width: 716
+        height: 544
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
