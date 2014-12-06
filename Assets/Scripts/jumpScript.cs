@@ -4,6 +4,8 @@ using System.Collections;
 public class jumpScript : MonoBehaviour {
 
 	public int jumpForce=200;
+	public bool standing;
+
 
 
 	// Use this for initialization
@@ -13,7 +15,15 @@ public class jumpScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown ("Jump")) //Cuando pulsa espacio salta
+
+		var absVelY = Mathf.Abs(rigidbody2D.velocity.y);
+		if(absVelY <= .05f){
+			standing = true;
+		}else{
+			standing = false;
+		}
+
+		if(Input.GetButtonDown ("Jump")&&standing) //Cuando pulsa espacio salta
 			saltar ();//mas abajo esta la funcion explicada
 	
 	}
