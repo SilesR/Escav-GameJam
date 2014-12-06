@@ -3,18 +3,26 @@ using System.Collections;
 
 public class jumpScript : MonoBehaviour {
 
+
+
 	public int jumpForce=200;
 	public bool standing;
 
+	private Animator animator;
+
+	public float tiempoEspera=0.2f;
 
 
 	// Use this for initialization
 	void Start () {
-	
+		animator = GetComponent<Animator> ();
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
+
+
 
 		var absVelY = Mathf.Abs(rigidbody2D.velocity.y);
 		if(absVelY <= .05f){
@@ -30,5 +38,27 @@ public class jumpScript : MonoBehaviour {
 	void saltar(){
 
 		rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+	}
+	void OnCollisionEnter2D(Collision2D col){
+				if (col.gameObject.tag == "Enemigo") {
+						animator.SetBool ("muerto", true);
+						GameControl.dead = true;
+
+			StartCoroutine (restart ());
+				}
+
 		}
+	void OnCollisionExit2D(Collision2D col){
+				animator.SetBool ("muerto", false);
+		}
+
+	IEnumerator restart() {
+		Debug.Log("Before Waiting 2 seconds");
+		yield return new WaitForSeconds(tiempoEspera); // Esperamos el tiempo definido
+		GameControl.dead = false;
+		GameControl.score = 0;
+		Application.LoadLevel (Application.loadedLevel);
+	}
+		
+
 }

@@ -10,7 +10,9 @@ public class movimientoEscenario : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			movimiento = new Vector3 (vhorizontal, 0, 0);
-		transform.Translate (movimiento * Time.deltaTime);
+		if(!GameControl.dead){
+						movimiento = new Vector3 (vhorizontal, 0, 0);//Movimiento del escenario Fondo
+						transform.Translate (movimiento * Time.deltaTime);
+				}
 	}
 }
