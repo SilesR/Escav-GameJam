@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: 56ee5efd22f3e5046a0ece3f8bb74d75
+guid: 92b5def1ae6273446a133b0c745598b1
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pinchos_0
+    21300002: pinchos_1
+    21300004: pinchos_2
+    21300006: pinchos_3
+    21300008: pinchos_4
+    21300010: pinchos_5
+    21300012: pinchos_6
+    21300014: pinchos_7
+    21300016: pinchos_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +34,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +51,96 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: pinchos_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 4
+        width: 90
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3
+        width: 81
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 3
+        width: 104
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2
+        width: 67
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_4
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2
+        width: 176
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_5
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 2
+        width: 62
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_6
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 0
+        width: 93
+        height: 529
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_7
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 0
+        width: 87
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinchos_8
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 2
+        width: 100
+        height: 569
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
