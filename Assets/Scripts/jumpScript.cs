@@ -31,13 +31,23 @@ public class jumpScript : MonoBehaviour {
 			standing = false;
 		}
 
-		if(Input.GetButtonDown ("Jump")&&standing) //Cuando pulsa espacio salta
-			saltar ();//mas abajo esta la funcion explicada
-	
+		if (Input.GetButtonDown ("Jump") && standing) { //Cuando pulsa espacio salta
+						saltar ();//mas abajo esta la funcion explicada
+				}
+
+		var VelY = (rigidbody2D.velocity.y);
+		if (VelY > 0f) {
+			animator.SetBool ("salto", true);
+			
+		} else {
+			animator.SetBool("salto",false);
+		}
+
 	}
 	void saltar(){
 
 		rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+	
 
 	}
 	void OnCollisionEnter2D(Collision2D col){
