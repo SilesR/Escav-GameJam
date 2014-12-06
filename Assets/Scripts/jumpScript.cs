@@ -38,6 +38,7 @@ public class jumpScript : MonoBehaviour {
 	void saltar(){
 
 		rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+
 	}
 	void OnCollisionEnter2D(Collision2D col){
 				if (col.gameObject.tag == "Enemigo") {
