@@ -10,7 +10,7 @@ public class jumpScript : MonoBehaviour {
 
 	private Animator animator;
 
-	public float tiempoEspera=0.2f;
+	public float tiempoEspera=3f;
 
 
 	// Use this for initialization
