@@ -7,7 +7,10 @@ public class jumpScript : MonoBehaviour {
 
 	public int jumpForce=200;
 	public bool standing;
+
 	private Animator animator;
+
+	public float tiempoEspera=0.2f;
 
 
 	// Use this for initialization
@@ -40,7 +43,18 @@ public class jumpScript : MonoBehaviour {
 				if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
 						GameControl.dead = true;
-
+			StartCoroutine (restart ());
 				}
+
 		}
+
+	IEnumerator restart() {
+		Debug.Log("Before Waiting 2 seconds");
+		yield return new WaitForSeconds(tiempoEspera); // Esperamos el tiempo definido
+		GameControl.dead = false;
+		GameControl.score = 0;
+		Application.LoadLevel (Application.loadedLevel);
+	}
+		
+
 }
