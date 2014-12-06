@@ -43,9 +43,13 @@ public class jumpScript : MonoBehaviour {
 				if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
 						GameControl.dead = true;
+
 			StartCoroutine (restart ());
 				}
 
+		}
+	void OnCollisionExit2D(Collision2D col){
+				animator.SetBool ("muerto", false);
 		}
 
 	IEnumerator restart() {
