@@ -8,6 +8,7 @@ public class jumpScript : MonoBehaviour {
 	public int jumpForce=200; //fuerza para el salto, se puede modificar desde interfaz
 	public bool standing;
 
+	public string menu;
 
 	private Animator animator; 
 
@@ -52,18 +53,18 @@ public class jumpScript : MonoBehaviour {
 
 	}
 	void OnCollisionEnter2D(Collision2D col){ //cuando choca con objeto tag "Enemigo" se activa anim. muerte y se reinicia el nivel
-				if (col.gameObject.tag == "Enemigo") {
-						animator.SetBool ("muerto", true);
-						GameControl.dead = true;
 
+		if (col.gameObject.tag == "Enemigo") {
+						animator.SetBool ("muerto", true);
+						GameControl.vidas = GameControl.vidas - 1;
+			GameControl.dead=true;
+				
+			muerteTotal();
 			StartCoroutine (restart ());
 				}
 
 		}
-	void OnCollisionExit2D(Collision2D col){
-				animator.SetBool ("muerto", false); //cuando se reinicia el juego, anim. muerto es fase
-				
-		}
+
 
 	IEnumerator restart() {
 		Debug.Log("Before Waiting 2 seconds");
@@ -72,6 +73,16 @@ public class jumpScript : MonoBehaviour {
 		GameControl.score = 0;
 		Application.LoadLevel (Application.loadedLevel);
 	}
-		
+
+	void muerteTotal(){
+				if (GameControl.vidas <= 0) {
+
+						GameControl.score = 0;
+						GameControl.dead = false;
+						GameControl.vidas = 3;
+
+						Application.LoadLevel (menu);
+				}
+		}
 
 }
