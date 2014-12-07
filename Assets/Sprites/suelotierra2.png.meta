@@ -3,6 +3,229 @@ guid: 9c50b9dd169773d4585e4d89d2835490
 TextureImporter:
   fileIDToRecycleName:
     21300000: suelotierra2_0
+    21300002: suelotierra2_1
+    21300004: suelotierra2_2
+    21300006: suelotierra2_3
+    21300008: suelotierra2_4
+    21300010: suelotierra2_5
+    21300012: suelotierra2_6
+    21300014: suelotierra2_7
+    21300016: suelotierra2_8
+    21300018: suelotierra2_9
+    21300020: suelotierra2_10
+    21300022: suelotierra2_11
+    21300024: suelotierra2_12
+    21300026: suelotierra2_13
+    21300028: suelotierra2_14
+    21300030: suelotierra2_15
+    21300032: suelotierra2_16
+    21300034: suelotierra2_17
+    21300036: suelotierra2_18
+    21300038: suelotierra2_19
+    21300040: suelotierra2_20
+    21300042: suelotierra2_21
+    21300044: suelotierra2_22
+    21300046: suelotierra2_23
+    21300048: suelotierra2_24
+    21300050: suelotierra2_25
+    21300052: suelotierra2_26
+    21300054: suelotierra2_27
+    21300056: suelotierra2_28
+    21300058: suelotierra2_29
+    21300060: suelotierra2_30
+    21300062: suelotierra2_31
+    21300064: suelotierra2_32
+    21300066: suelotierra2_33
+    21300068: suelotierra2_34
+    21300070: suelotierra2_35
+    21300072: suelotierra2_36
+    21300074: suelotierra2_37
+    21300076: suelotierra2_38
+    21300078: suelotierra2_39
+    21300080: suelotierra2_40
+    21300082: suelotierra2_41
+    21300084: suelotierra2_42
+    21300086: suelotierra2_43
+    21300088: suelotierra2_44
+    21300090: suelotierra2_45
+    21300092: suelotierra2_46
+    21300094: suelotierra2_47
+    21300096: suelotierra2_48
+    21300098: suelotierra2_49
+    21300100: suelotierra2_50
+    21300102: suelotierra2_51
+    21300104: suelotierra2_52
+    21300106: suelotierra2_53
+    21300108: suelotierra2_54
+    21300110: suelotierra2_55
+    21300112: suelotierra2_56
+    21300114: suelotierra2_57
+    21300116: suelotierra2_58
+    21300118: suelotierra2_59
+    21300120: suelotierra2_60
+    21300122: suelotierra2_61
+    21300124: suelotierra2_62
+    21300126: suelotierra2_63
+    21300128: suelotierra2_64
+    21300130: suelotierra2_65
+    21300132: suelotierra2_66
+    21300134: suelotierra2_67
+    21300136: suelotierra2_68
+    21300138: suelotierra2_69
+    21300140: suelotierra2_70
+    21300142: suelotierra2_71
+    21300144: suelotierra2_72
+    21300146: suelotierra2_73
+    21300148: suelotierra2_74
+    21300150: suelotierra2_75
+    21300152: suelotierra2_76
+    21300154: suelotierra2_77
+    21300156: suelotierra2_78
+    21300158: suelotierra2_79
+    21300160: suelotierra2_80
+    21300162: suelotierra2_81
+    21300164: suelotierra2_82
+    21300166: suelotierra2_83
+    21300168: suelotierra2_84
+    21300170: suelotierra2_85
+    21300172: suelotierra2_86
+    21300174: suelotierra2_87
+    21300176: suelotierra2_88
+    21300178: suelotierra2_89
+    21300180: suelotierra2_90
+    21300182: suelotierra2_91
+    21300184: suelotierra2_92
+    21300186: suelotierra2_93
+    21300188: suelotierra2_94
+    21300190: suelotierra2_95
+    21300192: suelotierra2_96
+    21300194: suelotierra2_97
+    21300196: suelotierra2_98
+    21300198: suelotierra2_99
+    21300200: suelotierra2_100
+    21300202: suelotierra2_101
+    21300204: suelotierra2_102
+    21300206: suelotierra2_103
+    21300208: suelotierra2_104
+    21300210: suelotierra2_105
+    21300212: suelotierra2_106
+    21300214: suelotierra2_107
+    21300216: suelotierra2_108
+    21300218: suelotierra2_109
+    21300220: suelotierra2_110
+    21300222: suelotierra2_111
+    21300224: suelotierra2_112
+    21300226: suelotierra2_113
+    21300228: suelotierra2_114
+    21300230: suelotierra2_115
+    21300232: suelotierra2_116
+    21300234: suelotierra2_117
+    21300236: suelotierra2_118
+    21300238: suelotierra2_119
+    21300240: suelotierra2_120
+    21300242: suelotierra2_121
+    21300244: suelotierra2_122
+    21300246: suelotierra2_123
+    21300248: suelotierra2_124
+    21300250: suelotierra2_125
+    21300252: suelotierra2_126
+    21300254: suelotierra2_127
+    21300256: suelotierra2_128
+    21300258: suelotierra2_129
+    21300260: suelotierra2_130
+    21300262: suelotierra2_131
+    21300264: suelotierra2_132
+    21300266: suelotierra2_133
+    21300268: suelotierra2_134
+    21300270: suelotierra2_135
+    21300272: suelotierra2_136
+    21300274: suelotierra2_137
+    21300276: suelotierra2_138
+    21300278: suelotierra2_139
+    21300280: suelotierra2_140
+    21300282: suelotierra2_141
+    21300284: suelotierra2_142
+    21300286: suelotierra2_143
+    21300288: suelotierra2_144
+    21300290: suelotierra2_145
+    21300292: suelotierra2_146
+    21300294: suelotierra2_147
+    21300296: suelotierra2_148
+    21300298: suelotierra2_149
+    21300300: suelotierra2_150
+    21300302: suelotierra2_151
+    21300304: suelotierra2_152
+    21300306: suelotierra2_153
+    21300308: suelotierra2_154
+    21300310: suelotierra2_155
+    21300312: suelotierra2_156
+    21300314: suelotierra2_157
+    21300316: suelotierra2_158
+    21300318: suelotierra2_159
+    21300320: suelotierra2_160
+    21300322: suelotierra2_161
+    21300324: suelotierra2_162
+    21300326: suelotierra2_163
+    21300328: suelotierra2_164
+    21300330: suelotierra2_165
+    21300332: suelotierra2_166
+    21300334: suelotierra2_167
+    21300336: suelotierra2_168
+    21300338: suelotierra2_169
+    21300340: suelotierra2_170
+    21300342: suelotierra2_171
+    21300344: suelotierra2_172
+    21300346: suelotierra2_173
+    21300348: suelotierra2_174
+    21300350: suelotierra2_175
+    21300352: suelotierra2_176
+    21300354: suelotierra2_177
+    21300356: suelotierra2_178
+    21300358: suelotierra2_179
+    21300360: suelotierra2_180
+    21300362: suelotierra2_181
+    21300364: suelotierra2_182
+    21300366: suelotierra2_183
+    21300368: suelotierra2_184
+    21300370: suelotierra2_185
+    21300372: suelotierra2_186
+    21300374: suelotierra2_187
+    21300376: suelotierra2_188
+    21300378: suelotierra2_189
+    21300380: suelotierra2_190
+    21300382: suelotierra2_191
+    21300384: suelotierra2_192
+    21300386: suelotierra2_193
+    21300388: suelotierra2_194
+    21300390: suelotierra2_195
+    21300392: suelotierra2_196
+    21300394: suelotierra2_197
+    21300396: suelotierra2_198
+    21300398: suelotierra2_199
+    21300400: suelotierra2_200
+    21300402: suelotierra2_201
+    21300404: suelotierra2_202
+    21300406: suelotierra2_203
+    21300408: suelotierra2_204
+    21300410: suelotierra2_205
+    21300412: suelotierra2_206
+    21300414: suelotierra2_207
+    21300416: suelotierra2_208
+    21300418: suelotierra2_209
+    21300420: suelotierra2_210
+    21300422: suelotierra2_211
+    21300424: suelotierra2_212
+    21300426: suelotierra2_213
+    21300428: suelotierra2_214
+    21300430: suelotierra2_215
+    21300432: suelotierra2_216
+    21300434: suelotierra2_217
+    21300436: suelotierra2_218
+    21300438: suelotierra2_219
+    21300440: suelotierra2_220
+    21300442: suelotierra2_221
+    21300444: suelotierra2_222
+    21300446: suelotierra2_223
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,7 +260,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 589}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -47,12 +270,22 @@ TextureImporter:
     - name: suelotierra2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 46
         y: 0
-        width: 1820
-        height: 555
+        width: 1719
+        height: 491
+      alignment: 9
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: suelotierra2_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 493
+        width: 1815
+        height: 269
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 61}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
