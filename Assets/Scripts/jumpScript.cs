@@ -5,17 +5,18 @@ public class jumpScript : MonoBehaviour {
 
 
 
-	public int jumpForce=200;
+	public int jumpForce=200; //fuerza para el salto, se puede modificar desde interfaz
 	public bool standing;
 
-	private Animator animator;
 
-	public float tiempoEspera=3f;
+	private Animator animator; 
+
+	public float tiempoEspera=3f; //tiempo para reiniciar el nivel
 
 
 	// Use this for initialization
 	void Start () {
-		animator = GetComponent<Animator> ();
+		animator = GetComponent<Animator> (); 
 	}
 
 	
@@ -24,33 +25,33 @@ public class jumpScript : MonoBehaviour {
 
 
 
-		var absVelY = Mathf.Abs(rigidbody2D.velocity.y);
+		var absVelY = Mathf.Abs(rigidbody2D.velocity.y); 
 		if(absVelY <= .05f){
-			standing = true;
+			standing = true; //si la velocidad en Y es menor que --- se activa la animacion de andar
 		}else{
 			standing = false;
 		}
 
-		if (Input.GetButtonDown ("Jump") && standing) { //Cuando pulsa espacio salta
+		if (Input.GetButtonDown ("Jump") && standing && !GameControl.dead) { //Cuando pulsa espacio salta
 						saltar ();//mas abajo esta la funcion explicada
 				}
 
 		var VelY = (rigidbody2D.velocity.y);
 		if (VelY > 0f) {
-			animator.SetBool ("salto", true);
+			animator.SetBool ("salto", true); //cuando la velocidad en el eje Y es mayor que --- se activa la anim. salto
 			
 		} else {
 			animator.SetBool("salto",false);
 		}
 
 	}
-	void saltar(){
+	void saltar(){ //el objeto se empuja en el eje Y con una fierza = jumpForce
 
 		rigidbody2D.AddForce (new Vector2 (0, jumpForce));
 	
 
 	}
-	void OnCollisionEnter2D(Collision2D col){
+	void OnCollisionEnter2D(Collision2D col){ //cuando choca con objeto tag "Enemigo" se activa anim. muerte y se reinicia el nivel
 				if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
 						GameControl.dead = true;
@@ -60,7 +61,8 @@ public class jumpScript : MonoBehaviour {
 
 		}
 	void OnCollisionExit2D(Collision2D col){
-				animator.SetBool ("muerto", false);
+				animator.SetBool ("muerto", false); //cuando se reinicia el juego, anim. muerto es fase
+				
 		}
 
 	IEnumerator restart() {
