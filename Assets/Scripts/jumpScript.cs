@@ -89,7 +89,7 @@ public class jumpScript : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D target){
 		if (target.transform.tag == "SuperJump") {
-			jumpForce = jumpForce1;
+			jumpForce = jumpForce/superJump;
 		}
 	}
 
