@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class jumpScript : MonoBehaviour {
 
@@ -17,12 +18,14 @@ public class jumpScript : MonoBehaviour {
 
 	private Animator animator; 
 
-	public float tiempoEspera=3f; //tiempo para reiniciar el nivel
+	public float tiempoEspera=3f;//tiempo para reiniciar el nivel
 
+	public Text texto;
 
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> (); 
+		texto = GameObject.Find ("Textvidas").GetComponent<Text> ();
 	}
 
 	
@@ -62,6 +65,9 @@ public class jumpScript : MonoBehaviour {
 		if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
 						GameControl.vidas = GameControl.vidas - 1;
+			texto.text = GameControl.vidas.ToString();
+
+
 			GameControl.dead=true;
 				
 			muerteTotal();
@@ -85,7 +91,7 @@ public class jumpScript : MonoBehaviour {
 		Debug.Log("Before Waiting 2 seconds");
 		yield return new WaitForSeconds(tiempoEspera); // Esperamos el tiempo definido
 		GameControl.dead = false;
-		GameControl.score = 0;
+
 		Application.LoadLevel (Application.loadedLevel);
 	}
 
