@@ -3,6 +3,8 @@ using System.Collections;
 
 public class avanzarNivel : MonoBehaviour {
 	public string nextLevel;
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -12,7 +14,9 @@ public class avanzarNivel : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnCollisionEnter2D(Collision2D col){
+	void OnTriggerEnter2D(Collider2D col){
+
+
 		Application.LoadLevel (nextLevel);
 	}
 }
