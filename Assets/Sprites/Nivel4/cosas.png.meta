@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: e926c79e60f0337498b06e53e3bf5fdc
+guid: 8ac2bba4243290a4b89a4048385659bb
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: cosas
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0

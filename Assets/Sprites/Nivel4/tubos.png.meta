@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: b8a3690856937ae49adfe952befa4e8b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tubos
+    21300002: tubos_0
+    21300004: tubos_1
+    21300006: tubos_2
+    21300008: tubos_3
+    21300010: tubos_4
+    21300012: tubos_5
+    21300014: tubos_6
+    21300016: tubos_7
+    21300018: tubos_8
+    21300020: tubos_9
+    21300022: tubos_10
+    21300024: tubos_11
+    21300026: tubos_12
+    21300028: tubos_13
+    21300030: tubos_14
+    21300032: tubos_15
+    21300034: tubos_16
+    21300036: tubos_17
+    21300038: tubos_18
+    21300040: tubos_19
+    21300042: tubos_20
+    21300044: tubos_21
+    21300046: tubos_22
+    21300048: tubos_23
+    21300050: tubos_24
+    21300052: tubos_25
+    21300054: tubos_26
+    21300056: tubos_27
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tubos_16
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 369
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tubos_1
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 445
+        width: 122
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tubos_2
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 445
+        width: 122
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tubos_3
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 304
+        width: 122
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tubos_4
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 304
+        width: 122
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tubos_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
