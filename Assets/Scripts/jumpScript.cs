@@ -29,6 +29,8 @@ public class jumpScript : MonoBehaviour {
 	void Start () {
 		animator = GetComponent<Animator> (); 
 		texto = GameObject.Find ("Textvidas").GetComponent<Text> ();
+
+		texto.text = GameControl.vidas.ToString();
 	}
 
 	
@@ -71,7 +73,7 @@ public class jumpScript : MonoBehaviour {
 						animator.SetBool ("muerto", true);
 			AudioSource.PlayClipAtPoint(deadSound, transform.position);
 						GameControl.vidas = GameControl.vidas - 1;
-			texto.text = GameControl.vidas.ToString();
+		
 
 
 			GameControl.dead=true;
