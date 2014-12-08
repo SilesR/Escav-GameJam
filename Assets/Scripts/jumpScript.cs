@@ -16,6 +16,9 @@ public class jumpScript : MonoBehaviour {
 
 	public string menu;
 
+	public AudioClip jumpSound;//Clips de Audio Necesarios.
+	public AudioClip deadSound;
+
 	private Animator animator; 
 
 	public float tiempoEspera=3f;//tiempo para reiniciar el nivel
@@ -57,6 +60,8 @@ public class jumpScript : MonoBehaviour {
 	void saltar(){ //el objeto se empuja en el eje Y con una fierza = jumpForce
 
 		rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+		AudioSource.PlayClipAtPoint(jumpSound,transform.position);
+
 	
 
 	}
@@ -64,6 +69,7 @@ public class jumpScript : MonoBehaviour {
 
 		if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
+			AudioSource.PlayClipAtPoint(deadSound, transform.position);
 						GameControl.vidas = GameControl.vidas - 1;
 			texto.text = GameControl.vidas.ToString();
 
