@@ -21,7 +21,7 @@ public class jumpScript : MonoBehaviour {
 
 	private Animator animator; 
 
-	public float tiempoEspera=3f;//tiempo para reiniciar el nivel
+	public float tiempoEspera=2f;//tiempo para reiniciar el nivel
 
 	public Text texto;
 
