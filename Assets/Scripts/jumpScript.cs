@@ -1,23 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class jumpScript : MonoBehaviour {
 
 
 
-	public int jumpForce=200; //fuerza para el salto, se puede modificar desde interfaz
+	public float jumpForce=200f; //fuerza para el salto, se puede modificar desde interfaz
 	public bool standing;
+
+	public float jumpForce1=200f;
+
+
+	public float superJump = 2;
 
 	public string menu;
 
+	public AudioClip jumpSound;//Clips de Audio Necesarios.
+	public AudioClip deadSound;
+
 	private Animator animator; 
 
-	public float tiempoEspera=3f; //tiempo para reiniciar el nivel
+	public float tiempoEspera=2f;//tiempo para reiniciar el nivel
 
+	public Text texto;
 
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> (); 
+		texto = GameObject.Find ("Textvidas").GetComponent<Text> ();
 	}
 
 	
@@ -49,6 +60,8 @@ public class jumpScript : MonoBehaviour {
 	void saltar(){ //el objeto se empuja en el eje Y con una fierza = jumpForce
 
 		rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+		AudioSource.PlayClipAtPoint(jumpSound,transform.position);
+
 	
 
 	}
@@ -56,7 +69,11 @@ public class jumpScript : MonoBehaviour {
 
 		if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
+			AudioSource.PlayClipAtPoint(deadSound, transform.position);
 						GameControl.vidas = GameControl.vidas - 1;
+			texto.text = GameControl.vidas.ToString();
+
+
 			GameControl.dead=true;
 				
 			muerteTotal();
@@ -64,13 +81,23 @@ public class jumpScript : MonoBehaviour {
 				}
 
 		}
+	void OnTriggerEnter2D(Collider2D target){
+		if (target.transform.tag == "SuperJump") {
+			jumpForce = jumpForce * superJump;
+		}
+	}
 
+	void OnTriggerExit2D(Collider2D target){
+		if (target.transform.tag == "SuperJump") {
+			jumpForce = jumpForce1;
+		}
+	}
 
 	IEnumerator restart() {
 		Debug.Log("Before Waiting 2 seconds");
 		yield return new WaitForSeconds(tiempoEspera); // Esperamos el tiempo definido
 		GameControl.dead = false;
-		GameControl.score = 0;
+
 		Application.LoadLevel (Application.loadedLevel);
 	}
 
@@ -84,5 +111,7 @@ public class jumpScript : MonoBehaviour {
 						Application.LoadLevel (menu);
 				}
 		}
+
+
 
 }
