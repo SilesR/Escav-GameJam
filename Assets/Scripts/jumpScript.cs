@@ -18,6 +18,7 @@ public class jumpScript : MonoBehaviour {
 
 	public AudioClip jumpSound;//Clips de Audio Necesarios.
 	public AudioClip deadSound;
+	public AudioClip deadSound2;
 
 	private Animator animator; 
 
@@ -72,6 +73,7 @@ public class jumpScript : MonoBehaviour {
 		if (col.gameObject.tag == "Enemigo") {
 						animator.SetBool ("muerto", true);
 			AudioSource.PlayClipAtPoint(deadSound, transform.position);
+			AudioSource.PlayClipAtPoint(deadSound2, transform.position);
 						GameControl.vidas = GameControl.vidas - 1;
 		
 
