@@ -5,8 +5,13 @@ public class jumpScript : MonoBehaviour {
 
 
 
-	public int jumpForce=200; //fuerza para el salto, se puede modificar desde interfaz
+	public float jumpForce=200f; //fuerza para el salto, se puede modificar desde interfaz
 	public bool standing;
+
+	public float jumpForce1=200f;
+
+
+	public float superJump = 2;
 
 	public string menu;
 
@@ -64,7 +69,17 @@ public class jumpScript : MonoBehaviour {
 				}
 
 		}
+	void OnTriggerEnter2D(Collider2D target){
+		if (target.transform.tag == "SuperJump") {
+			jumpForce = jumpForce * superJump;
+		}
+	}
 
+	void OnTriggerExit2D(Collider2D target){
+		if (target.transform.tag == "SuperJump") {
+			jumpForce = jumpForce1;
+		}
+	}
 
 	IEnumerator restart() {
 		Debug.Log("Before Waiting 2 seconds");
@@ -84,5 +99,7 @@ public class jumpScript : MonoBehaviour {
 						Application.LoadLevel (menu);
 				}
 		}
+
+
 
 }
